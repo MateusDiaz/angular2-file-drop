@@ -51,7 +51,12 @@ var FileDropDirective = (function () {
             var method = "readAs" + strategy;
             FileAPI[method](file, function (event) {
                 if (event.type === 'load') {
-                    _this.emitFileDrop(event.result);
+                    
+					
+					//_this.emitFileDrop(event.result); //original
+					
+					_this.emitFileDrop(file); //alterado Print
+					
                 }
                 else if (event.type === 'error') {
                     throw new Error("Couldn't read file '" + file.name + "'");
