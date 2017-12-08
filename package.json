@@ -1,56 +1,23 @@
 {
-  "name": "angular2-file-drop",
-  "version": "0.2.0",
-  "description": "Angular2 component with Drag and Drop support for files",
-  "main": "build/bundles/index.umd.js",
-  "typings": "build/index.d.ts",
-  "module": "build/index.js",
+  "name": "ng2-drop-enterprise",
+  "version": "1.0.0",
+  "description": "Lib de retorno de dados de arquivos de drag an drop",
+  "main": "rollup.config.js",
   "scripts": {
-    "test": "npm run build",
-    "prebuild": "npm run lint",
-    "build": "tsc && npm run bundle",
-    "watch": "tsc -w",
-    "lint": "tslint src/*.ts",
-    "build:aot": "node_modules/.bin/ngc",
-    "prepublish": "npm run build && npm run build:aot",
-    "rollup": "rollup -i ./build/index.js -o ./build/bundles/index.umd.js -n ng.file-drop -c rollup.config.js",
-    "bundle": "npm run rollup"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jellyjs/angular2-file-drop.git"
+    "url": "git+https://github.com/MateusDiaz/angular2-file-drop.git"
   },
   "keywords": [
-    "angular",
-    "angular2",
-    "file",
-    "drag",
     "drop",
-    "upload"
+    "file"
   ],
-  "author": "Kamil Kisiela <kamil.kisiela@gmail.com>",
-  "license": "MIT",
+  "author": "Mateus Diaz <diazmateus@hotmail.com> (https://github.com/MateusDiaz/angular2-file-drop)",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jellyjs/angular2-file-drop/issues"
+    "url": "https://github.com/MateusDiaz/angular2-file-drop/issues"
   },
-  "homepage": "https://github.com/jellyjs/angular2-file-drop#readme",
-  "dependencies": {
-    "fileapi": "^2.0.20"
-  },
-  "devDependencies": {
-    "@angular/common": "^2.4.3",
-    "@angular/compiler": "^2.4.3",
-    "@angular/compiler-cli": "^2.4.3",
-    "@angular/core": "^2.4.3",
-    "@angular/platform-browser": "^2.4.3",
-    "@angular/platform-browser-dynamic": "^2.4.3",
-    "reflect-metadata": "^0.1.8",
-    "rxjs": "5.0.3",
-    "tslint": "^3.10.2",
-    "typescript": "^2.0.10",
-    "typings": "^1.4.0",
-    "zone.js": "^0.7.2",
-    "rollup": "^0.38.0",
-    "rollup-plugin-babel": "^2.6.1"
-  }
+  "homepage": "https://github.com/MateusDiaz/angular2-file-drop#readme"
 }
